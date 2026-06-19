@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
+<BaseLayout
+  title="Home"
+  description="Hands-on reviews of AI coding tools and backend infrastructure, written by a full-stack developer."
+>
+  <section class="hero">
+    <h1>Real reviews. Real code. No fluff.</h1>
+    <p>I build with these AI coding tools and backend stacks before I write about them.</p>
+  </section>
+</BaseLayout>
 
-<Layout>
-	<Welcome />
-</Layout>
+<style>
+  .hero {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    color: #555;
+    font-size: 1.1rem;
+  }
+</style>

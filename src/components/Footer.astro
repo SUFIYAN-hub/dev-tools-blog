@@ -1,0 +1,30 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <p>&copy; {year} DevToolsHub. All rights reserved.</p>
+  <nav>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid #e2e2e2;
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .site-footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .site-footer a {
+    color: inherit;
+  }
+</style>
